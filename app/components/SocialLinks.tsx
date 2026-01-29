@@ -41,7 +41,7 @@ export default function SocialLinks() {
         <span className="text-purple-400">$</span>
         <span className="text-gray-500">ls -la ~/socials</span>
       </div>
-      <div className="ml-6 grid grid-cols-2 md:grid-cols-5 gap-3">
+      <div className="ml-6 grid grid-cols-1 md:grid-cols-5 gap-3">
         {socialLinks.map((social) => {
           const Icon = social.icon;
           return (
