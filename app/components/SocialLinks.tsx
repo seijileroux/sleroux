@@ -1,28 +1,35 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Twitter, Instagram, Mail } from "lucide-react";
+import { Icon24LogoVk } from "@vkontakte/icons";
 
 export default function SocialLinks() {
   const socialLinks = [
     {
       name: "github",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/seijileroux",
       icon: Github,
       color: "text-purple-400",
     },
     {
-      name: "linkedin",
-      url: "https://linkedin.com/in/yourusername",
-      icon: Linkedin,
-      color: "text-blue-400",
-    },
-    {
       name: "twitter",
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/seijileroux",
       icon: Twitter,
       color: "text-cyan-400",
     },
     {
+      name: "instagram",
+      url: "https://www.instagram.com/echoofnova",
+      icon: Instagram,
+      color: "text-yellow-400",
+    },
+    {
+      name: "vk",
+      url: "https://vk.com/echoofnova",
+      icon: Icon24LogoVk,
+      color: "text-blue-400",
+    },
+    {
       name: "email",
-      url: "mailto:dev@yourdomain.com",
+      url: "mailto:s.leroux.dev@proton.me",
       icon: Mail,
       color: "text-green-400",
     },
@@ -34,7 +41,7 @@ export default function SocialLinks() {
         <span className="text-purple-400">$</span>
         <span className="text-gray-500">ls -la ~/socials</span>
       </div>
-      <div className="ml-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="ml-6 grid grid-cols-2 md:grid-cols-5 gap-3">
         {socialLinks.map((social) => {
           const Icon = social.icon;
           return (
