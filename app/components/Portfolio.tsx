@@ -3,35 +3,47 @@ import { ExternalLink, Folder, FileCode } from "lucide-react";
 export default function Portfolio() {
   const portfolioProjects = [
     {
-      title: "sick-ecommerce-app",
+      title: "onilyr",
       description:
-        "built a full-stack shop with stripe integration. users can actually buy stuff without the site exploding 🎉",
-      tags: ["react", "node", "mongodb", "stripe"],
-      link: "https://github.com/yourusername/project1",
+        "find any song's lyrics instantly, bathed in the cool, electric hum and vivid glow of pure neon light",
+      tags: ["next.js", "tailwind", "figma", "adaptive_design"],
+      link: "https://onilyr.vercel.app/",
       status: "prod",
     },
     {
-      title: "task-thing",
-      description:
-        "kanban board that doesn't suck. drag & drop, real-time updates, the whole shebang",
-      tags: ["react", "firebase", "tailwind"],
-      link: "https://github.com/yourusername/project2",
-      status: "prod",
-    },
-    {
-      title: "portfolio-v3",
-      description:
-        "this site! because every dev needs to rebuild their portfolio every 6 months lol",
-      tags: ["nextjs", "typescript", "coffee"],
-      link: "https://github.com/yourusername/project3",
+      title: "my-hyprland-dotfiles",
+      description: "A cozy home for my Linux configs ☕",
+      tags: ["linux", "hyprland", "lua", "shell", "css"],
+      link: "https://github.com/seijileroux/.noir-dotfiles",
       status: "dev",
     },
     {
-      title: "weather-thingy",
+      title: "my-portfolio",
       description:
-        "tells you if you need a jacket. uses actual weather APIs and everything",
-      tags: ["react", "openweather", "charts"],
-      link: "https://github.com/yourusername/project4",
+        "ironically, this very same site, built with next.js and much-much love",
+      tags: ["nextjs", "tailwind", "figma", "adaptive_design"],
+      link: "https://sleroux.vercel.app/",
+      status: "prod",
+    },
+    {
+      title: "coffee-shop-landing",
+      description: "a landing page for a cozy local coffee shop",
+      tags: ["nextjs", "tailwind", "figma", "adaptive_design"],
+      link: "https://choco-mug.vercel.app/",
+      status: "prod",
+    },
+    {
+      title: "landing-v1",
+      description: "example of an adaptive landing page/portfolio site",
+      tags: ["nextjs", "tailwind", "bootstrap", "adaptive_design"],
+      link: "https://lilith-dev.vercel.app/",
+      status: "prod",
+    },
+    {
+      title: "landing-v2",
+      description: "example of an adaptive landing page/portfolio site",
+      tags: ["nextjs", "tailwind", "adaptive_design"],
+      link: "https://johndoe-portfolio.vercel.app/",
       status: "prod",
     },
   ];
@@ -83,7 +95,7 @@ export default function Portfolio() {
               className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm"
             >
               <FileCode className="w-4 h-4" />
-              view source
+              check it out
             </a>
           </div>
         ))}
