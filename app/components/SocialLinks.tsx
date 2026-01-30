@@ -1,5 +1,6 @@
 import { Github, Twitter, Instagram, Mail } from "lucide-react";
 import { Icon24LogoVk } from "@vkontakte/icons";
+import { FaTelegram } from "react-icons/fa";
 
 export default function SocialLinks() {
   const socialLinks = [
@@ -7,25 +8,31 @@ export default function SocialLinks() {
       name: "github",
       url: "https://github.com/seijileroux",
       icon: Github,
-      color: "text-purple-400",
+      color: "text-slate-100",
     },
     {
       name: "twitter",
       url: "https://x.com/seijileroux",
       icon: Twitter,
-      color: "text-cyan-400",
+      color: "text-[#1d9bf0]",
     },
     {
       name: "instagram",
       url: "https://www.instagram.com/echoofnova",
       icon: Instagram,
-      color: "text-yellow-400",
+      color: "text-[#e15aa4]",
+    },
+    {
+      name: "telegram",
+      url: "https://t.me/ouchibooboo",
+      icon: FaTelegram,
+      color: "text-[#26a5e4]",
     },
     {
       name: "vk",
       url: "https://vk.com/echoofnova",
       icon: Icon24LogoVk,
-      color: "text-blue-400",
+      color: "text-[#2787f5]",
     },
     {
       name: "email",
@@ -41,7 +48,7 @@ export default function SocialLinks() {
         <span className="text-purple-400">$</span>
         <span className="text-gray-500">ls -la ~/socials</span>
       </div>
-      <div className="ml-6 grid grid-cols-1 md:grid-cols-5 gap-3">
+      <div className="ml-6 grid grid-cols-1 md:grid-cols-3 gap-3">
         {socialLinks.map((social) => {
           const Icon = social.icon;
           return (
