@@ -180,12 +180,12 @@ export default function Portfolio() {
         </div>
       </div>
 
-      {/* Modal/Popup with Image Pagination */}
+      {/* Modal Card with Image Pagination */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
           <div
             ref={modalRef}
-            className="relative w-full max-w-4xl bg-[#1a1a1a] border border-green-500/30 rounded-xl overflow-hidden"
+            className="relative w-full max-w-4xl bg-[#1a1a1a] border border-green-500/30 rounded-xl overflow-hidden max-h-[90vh] overflow-y-auto"
           >
             <button
               onClick={closeModal}

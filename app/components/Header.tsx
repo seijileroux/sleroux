@@ -7,7 +7,7 @@ export default function Header() {
         <Terminal className="w-5 h-5 text-green-400" />
         <span className="text-green-400">guest@portfolio:~$</span>
         <span className="text-gray-500">cat portfolio.sh</span>
-        <div className="ml-auto flex gap-2">
+        <div className="ml-auto hidden md:flex gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500"></div>
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
           <div className="w-3 h-3 rounded-full bg-green-500"></div>

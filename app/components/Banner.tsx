@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <pre className="text-green-500 text-xs md:text-sm mb-8 overflow-x-auto">
+    <pre className="text-green-500 md:text-sm mb-8 overflow-x-auto hidden md:flex">
       {`    
       ██╗  ██╗███████╗██╗     ██╗      ██████╗ 
       ██║  ██║██╔════╝██║     ██║     ██╔═══██╗
