@@ -247,24 +247,26 @@ export default function Portfolio() {
 
                 {/* Thumbnail Strip */}
                 {selectedProject.images.length > 1 && (
-                  <div className="mt-4 flex gap-2 justify-center overflow-x-auto py-2">
-                    {selectedProject.images.map((image, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentImageIndex(index)}
-                        className={`flex-shrink-0 w-20 h-16 rounded-md overflow-hidden border-2 transition-all ${
-                          index === currentImageIndex
-                            ? "border-green-500 ring-2 ring-green-500/50"
-                            : "border-transparent hover:border-green-500/50"
-                        }`}
-                      >
-                        <Image
-                          src={image}
-                          alt={`Thumbnail ${index + 1}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </button>
-                    ))}
+                  <div className="mt-4 overflow-x-auto py-2">
+                    <div className="flex gap-2 justify-center min-w-min mx-auto">
+                      {selectedProject.images.map((image, index) => (
+                        <button
+                          key={index}
+                          onClick={() => setCurrentImageIndex(index)}
+                          className={`flex-shrink-0 w-20 h-16 rounded-md overflow-hidden border-2 transition-all ${
+                            index === currentImageIndex
+                              ? "border-green-500 ring-2 ring-green-500/50"
+                              : "border-transparent hover:border-green-500/50"
+                          }`}
+                        >
+                          <Image
+                            src={image}
+                            alt={`Thumbnail ${index + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 )}
 
